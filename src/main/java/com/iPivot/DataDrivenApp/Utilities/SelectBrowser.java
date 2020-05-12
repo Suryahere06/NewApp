@@ -33,13 +33,14 @@ try {
     String currentDirectory = System.getProperty("user.dir");
     System.out.println("The current working directory is " + currentDirectory);
     
- /*
+ 
 
-	//WebDriverManager.chromedriver().setup();
-	// System.out.println(WebDriverManager.chromedriver().getBinaryPath());
+	WebDriverManager.chromedriver().setup();
+	System.out.println("Chrome browser2");
+
+	/*// System.out.println(WebDriverManager.chromedriver().getBinaryPath());
 	 //String str1= WebDriverManager.chromedriver().getBinaryPath();
 
-	System.out.println("Chrome browser2");
 	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 	ChromeOptions options = new ChromeOptions();
 	options.addArguments("start-maximized"); // open Browser in maximized mode
