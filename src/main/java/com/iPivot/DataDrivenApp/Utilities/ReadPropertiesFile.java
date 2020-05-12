@@ -8,7 +8,7 @@ import java.util.Properties;
 
 public class ReadPropertiesFile {
 	
-	String filepath="/Users/Surya/eclipse-workspace/NewApp/src/main/resource/com/iPivot/DataDrivenApp/PropertiesFile/config.properties";
+	String filepath=System.getProperty("user.dir")+"/src/main/resource/com/iPivot/DataDrivenApp/PropertiesFile/config.properties";
 
 	Properties prop=new Properties();
 	
