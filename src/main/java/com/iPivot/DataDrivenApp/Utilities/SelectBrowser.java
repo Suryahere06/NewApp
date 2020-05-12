@@ -33,7 +33,7 @@ try {
     String currentDirectory = System.getProperty("user.dir");
     System.out.println("The current working directory is " + currentDirectory);
     
- 
+ /*
 
 	//WebDriverManager.chromedriver().setup();
 	// System.out.println(WebDriverManager.chromedriver().getBinaryPath());
@@ -47,8 +47,8 @@ try {
 	options.addArguments("--disable-extensions"); // disabling extensions
 	options.addArguments("--disable-gpu"); // applicable to windows os only
 	options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-	options.addArguments("--no-sandbox"); // Bypass OS security model
-	 driver = new ChromeDriver(options);
+	options.addArguments("--no-sandbox	"); // Bypass OS security model*/
+	 driver = new ChromeDriver();
 	 
     
 
