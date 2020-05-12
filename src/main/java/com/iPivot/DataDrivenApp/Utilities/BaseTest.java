@@ -20,7 +20,7 @@ public class BaseTest {
 		String browser = prop.readPropFileByKey("browser");
 		String url=prop.readPropFileByKey("url");
 		System.out.println(url);
-		System.out.println("Preparing to get driver"); 
+		System.out.println("Preparing to get driver	"); 
 
  		driver=s.getBrowser(browser);
 		//driver.manage().timeouts().implicitlyWait(1000,TimeUnit.SECONDS);

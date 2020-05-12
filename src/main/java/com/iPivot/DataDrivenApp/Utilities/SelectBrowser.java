@@ -35,12 +35,12 @@ try {
     
  
 
-	WebDriverManager.chromedriver().setup();
-	 System.out.println(WebDriverManager.chromedriver().getBinaryPath());
-	 String str1= WebDriverManager.chromedriver().getBinaryPath();
+	//WebDriverManager.chromedriver().setup();
+	// System.out.println(WebDriverManager.chromedriver().getBinaryPath());
+	 //String str1= WebDriverManager.chromedriver().getBinaryPath();
 
 	System.out.println("Chrome browser2");
-	//System.setProperty("webdriver.chrome.driver", str1);
+	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 	driver=new ChromeDriver();
     //driver.manage().window().maximize();
 
