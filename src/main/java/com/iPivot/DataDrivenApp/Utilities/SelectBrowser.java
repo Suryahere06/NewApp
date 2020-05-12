@@ -40,7 +40,7 @@ try {
 	 String str1= WebDriverManager.chromedriver().getBinaryPath();
 
 	System.out.println("Chrome browser2");
-	System.setProperty("webdriver.chrome.driver", str1);
+	//System.setProperty("webdriver.chrome.driver", str1);
 	driver=new ChromeDriver();
     //driver.manage().window().maximize();
 
