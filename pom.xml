@@ -62,13 +62,13 @@
               <goal>copy-dependencies</goal>
             </goals>
             <configuration>
-              <outputDirectory>//Users//Surya//Desktop//jars</outputDirectory>
+              <outputDirectory>/Users/Surya/eclipse-workspace/NewApp/target/dependency</outputDirectory>
               <overWriteReleases>false</overWriteReleases>
               <overWriteSnapshots>false</overWriteSnapshots>
               <overWriteIfNewer>true</overWriteIfNewer>
             </configuration>
           </execution>
-        </executions>
+        </executions> 
       </plugin>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>

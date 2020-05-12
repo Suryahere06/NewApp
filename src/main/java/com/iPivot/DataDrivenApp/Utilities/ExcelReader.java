@@ -26,7 +26,7 @@ import org.apache.log4j.Logger;
 		log.fatal("TestData File is not found.Terminating process.Check configuration filepath");
 		System.exit(0);
 		return fis;
-	}
+	} 
 	
 public Object[][] getExcelData() {
 	fis= getFileInputStream();
