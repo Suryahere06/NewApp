@@ -35,10 +35,10 @@ try {
     
  
 
-	WebDriverManager.chromedriver().setup();
+	//WebDriverManager.chromedriver().setup();
 	System.out.println("Chrome browser2");
 
-	/*// System.out.println(WebDriverManager.chromedriver().getBinaryPath());
+	// System.out.println(WebDriverManager.chromedriver().getBinaryPath());
 	 //String str1= WebDriverManager.chromedriver().getBinaryPath();
 
 	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
@@ -48,8 +48,10 @@ try {
 	options.addArguments("--disable-extensions"); // disabling extensions
 	options.addArguments("--disable-gpu"); // applicable to windows os only
 	options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-	options.addArguments("--no-sandbox	"); // Bypass OS security model*/
-	 driver = new ChromeDriver();
+	options.addArguments("--no-sandbox	"); // Bypass OS security model
+	options.setBinary("/usr/bin/chromium-browser");
+
+	 driver = new ChromeDriver(options);
 	 
     
 
