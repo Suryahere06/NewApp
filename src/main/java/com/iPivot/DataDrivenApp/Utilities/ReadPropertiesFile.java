@@ -17,12 +17,16 @@ public class ReadPropertiesFile {
 		System.out.println("Reading file");
 		File f=new File(filepath); //common man
 		FileInputStream fis=new FileInputStream(f); // Artist
- 		
-		prop.load(fis); // special artist
+		
+		prop.load(fis); 
+		System.out.println(key);
+		System.out.println(prop.getProperty(key));
   		return prop.getProperty(key); //special artist reading the file
 	
 	
 	}
 }
  
+
+
 

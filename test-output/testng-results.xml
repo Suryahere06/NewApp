@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="18887" started-at="2020-05-12T17:47:45 EDT" finished-at="2020-05-12T17:48:03 EDT">
+  <suite name="Default suite" duration-ms="22979" started-at="2020-05-13T17:47:43 EDT" finished-at="2020-05-13T17:48:06 EDT">
     <groups>
     </groups>
-    <test name="Test" duration-ms="18887" started-at="2020-05-12T17:47:45 EDT" finished-at="2020-05-12T17:48:03 EDT">
+    <test name="Default test" duration-ms="22979" started-at="2020-05-13T17:47:43 EDT" finished-at="2020-05-13T17:48:06 EDT">
       <class name="com.iPivot.DataDrivenApp.Test.ForgotPassword">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.iPivot.DataDrivenApp.Test.ForgotPassword@735b5592]" name="launchBrowser" is-config="true" duration-ms="5374" started-at="2020-05-12T17:47:45 EDT" finished-at="2020-05-12T17:47:50 EDT">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.iPivot.DataDrivenApp.Test.ForgotPassword@1e965684]" name="launchBrowser" is-config="true" duration-ms="8330" started-at="2020-05-13T17:47:44 EDT" finished-at="2020-05-13T17:47:52 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="forgotPassword(java.lang.String)[pri:0, instance:com.iPivot.DataDrivenApp.Test.ForgotPassword@735b5592]" name="forgotPassword" duration-ms="3979" started-at="2020-05-12T17:47:50 EDT" data-provider="Email" finished-at="2020-05-12T17:47:54 EDT">
+        <test-method status="PASS" signature="forgotPassword(java.lang.String)[pri:0, instance:com.iPivot.DataDrivenApp.Test.ForgotPassword@1e965684]" name="forgotPassword" duration-ms="4581" started-at="2020-05-13T17:47:52 EDT" data-provider="Email" finished-at="2020-05-13T17:47:56 EDT">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgotPassword -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.iPivot.DataDrivenApp.Test.ForgotPassword@735b5592]" name="closeBrowser" is-config="true" duration-ms="146" started-at="2020-05-12T17:47:54 EDT" finished-at="2020-05-12T17:47:54 EDT">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.iPivot.DataDrivenApp.Test.ForgotPassword@1e965684]" name="closeBrowser" is-config="true" duration-ms="273" started-at="2020-05-13T17:47:57 EDT" finished-at="2020-05-13T17:47:57 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.iPivot.DataDrivenApp.Test.ForgotPassword@735b5592]" name="launchBrowser" is-config="true" duration-ms="5506" started-at="2020-05-12T17:47:54 EDT" finished-at="2020-05-12T17:48:00 EDT">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.iPivot.DataDrivenApp.Test.ForgotPassword@1e965684]" name="launchBrowser" is-config="true" duration-ms="5429" started-at="2020-05-13T17:47:57 EDT" finished-at="2020-05-13T17:48:02 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="forgotPassword(java.lang.String)[pri:0, instance:com.iPivot.DataDrivenApp.Test.ForgotPassword@735b5592]" name="forgotPassword" duration-ms="3681" started-at="2020-05-12T17:48:00 EDT" data-provider="Email" finished-at="2020-05-12T17:48:03 EDT">
+        <test-method status="PASS" signature="forgotPassword(java.lang.String)[pri:0, instance:com.iPivot.DataDrivenApp.Test.ForgotPassword@1e965684]" name="forgotPassword" duration-ms="3967" started-at="2020-05-13T17:48:02 EDT" data-provider="Email" finished-at="2020-05-13T17:48:06 EDT">
           <params>
             <param index="0">
               <value>
@@ -41,11 +41,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgotPassword -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.iPivot.DataDrivenApp.Test.ForgotPassword@735b5592]" name="closeBrowser" is-config="true" duration-ms="145" started-at="2020-05-12T17:48:03 EDT" finished-at="2020-05-12T17:48:03 EDT">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.iPivot.DataDrivenApp.Test.ForgotPassword@1e965684]" name="closeBrowser" is-config="true" duration-ms="281" started-at="2020-05-13T17:48:06 EDT" finished-at="2020-05-13T17:48:06 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.iPivot.DataDrivenApp.Test.ForgotPassword -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

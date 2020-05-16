@@ -3,38 +3,46 @@ package com.iPivot.DataDrivenApp.Utilities;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 
 import org.apache.log4j.Logger;
 
-/*public class ExcelReader {
+public class ExcelReader {
 	
 	static ReadPropertiesFile prop=new ReadPropertiesFile();
 	Logger log=Logger.getLogger(ExcelReader.class);
-	static FileInputStream fis=null;
+	 static FileInputStream fis=null;
 	
-	public FileInputStream getFileInputStream()
+	private void getFileInputStream()
 	{
+		String filepath;
+ 			try {
+			  	filepath = prop.readPropFileByKey("filepath");
+			
+		File f=new File(System.getProperty("user.dir")+filepath);
+		fis=new FileInputStream(f);
 		
-			try {
-			String 	filepath = prop.readPropFileByKey("filepath");
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		File srcfile=new File(filepath);
-		fis=new FileInputStream(srcfile);
-		log.fatal("TestData File is not found.Terminating process.Check configuration filepath");
-		System.exit(0);
-		return fis;
-	} 
+		 			}
+		
+		catch (IOException e) {
+			// TODO Auto-generated catch block
+			log.fatal("TestData File is not found.Terminating process.Check configuration filepath");
+
+			e.printStackTrace();
+		}
+  	} 
 	
-public Object[][] getExcelData() {
-	fis= getFileInputStream();
-	
-	XSSFWorkbook wb=XSSFWorkbook(fis);
+public Object[][] getExcelData() throws IOException {
+	getFileInputStream();
+ 	
+	XSSFWorkbook wb=new XSSFWorkbook(fis);
 	XSSFSheet sheet=wb.getSheetAt(0);
 	
-	int TotalNumberOfRows=(sheet.getLastRowNum);
+	int TotalNumberOfRows=(sheet.getLastRowNum());
 	int TotalNumberOfCols=2;
 	
 	String[][] arrayExcelData=new String[TotalNumberOfRows][TotalNumberOfCols];
@@ -45,12 +53,14 @@ public Object[][] getExcelData() {
 			
 			
 		}
+		
+	
 	}
 		
-	wb.close();
+	fis.close();
 	return arrayExcelData;
 	
 	
 }
 
-}*/
+}

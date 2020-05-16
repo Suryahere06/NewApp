@@ -32,10 +32,16 @@ try {
 	
     String currentDirectory = System.getProperty("user.dir");
     System.out.println("The current working directory is " + currentDirectory);
-    
+    String os = System.getProperty("os.name").toLowerCase();
  
-
-	//WebDriverManager.chromedriver().setup();
+    if(os.contains("mac")||os.contains("windows"))
+    {
+    	WebDriverManager.chromedriver().setup();
+    	driver = new ChromeDriver();
+    }
+    
+    else
+    {
 	System.out.println("Chrome browser2");
 
 	// System.out.println(WebDriverManager.chromedriver().getBinaryPath());
@@ -48,15 +54,15 @@ try {
 	//options.addArguments("start-maximized"); // open Browser in maximized mode
 	options.addArguments("disable-infobars"); // disabling infobars
 	options.addArguments("--disable-extensions"); // disabling extensions
-	options.addArguments("--headless"); // applicable to windows os only
+	options.addArguments("--headless");  
 	options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 	options.addArguments("--no-sandbox	"); // Bypass OS security model
 
 	 driver = new ChromeDriver(options);
-	 
-    
+		System.out.println("Chrome browser3");
 
-			System.out.println("Chrome browser3");
+    }
+
 }
 			//log.info("Browser selected is chrome browser");
 
@@ -75,7 +81,7 @@ catch(Exception e) {
 			//log.info("Browser selected is ie browser");
 		
 	}else {
-		//log.fatal("specify the corect browser");
+		//log.fatal("specify the correct browser");
 		System.exit(0);
 	}
 return driver;
